@@ -25,6 +25,7 @@ Clone from git into your chosen directory on your local computer. Go to the root
 ## Usage
 Type npm start in the root directory if you wish to initialize the app on your localhost, and make sure Mongo is running (mongod for Mac users). This app consists of only two pages, Search, and Saved. Typing in a query in Search will result in a list of books being populated below the search field. You can continue to search for what you want, use, the view button to see the Google link for it, or click "Save" to save it to the database. Now go to the Saved page, and you'll see a list of all books saved to the database. You can click the View button here as well to visit the Google link, or click "Delete" to remove it from the database.
 
+[Deployed App](https://tmk-google-books-search.herokuapp.com/)
 ![Search page screenshot](./assets/search-screenshot.png)
 ![Saved page screenshot](./assets/saved-screenshot.png)
 
