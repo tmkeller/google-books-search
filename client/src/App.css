@@ -1,24 +1,102 @@
-.App {
-  text-align: center;
+html {
+  position: relative;
+  min-height: 100%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+body {
   color: white;
+  background-color: #272727;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  background-repeat: repeat;
 }
 
-.App-intro {
-  font-size: large;
+.main-content {
+  padding: 80px 35px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+h1, h2 {
+  text-align: center;
+  margin-left: 11px;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 27px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 21px;
+  display:inline-block;
+  float:left;
+}
+
+a:link {
+  color: #eeeeee;
+}
+
+a:visited {
+  color: #aaaaaa;
+}
+
+a:hover {
+  color: #dddddd;
+}
+
+a:active {
+  color: #cccccc;
+}
+
+hr {
+  background-color: white;
+  margin: 0 11px 12px 11px;
+}
+
+.custom_row {
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 22px;
+}
+
+.center_col {
+  background-color: #000000;
+  padding: 20px 6px;
+  border-radius: 6px;
+  box-shadow: 4px 4px 20px -1px rgba(131,131,131,1);
+  -webkit-box-shadow: 4px 4px 20px -1px rgba(131,131,131,1);
+  -moz-box-shadow: 4px 4px 20px -1px rgba(131,131,131,1);
+}
+
+.aligned_content {
+  padding: 0 10px;
+}
+
+@media all and (max-width: 575px) {
+  .center_col {
+      margin: 0 auto;
+  }
+
+  .main_content {
+      padding: 60px 4px;
+  }
+
+  .form_div {
+      width: 100%;
+  }
+}
+
+@media all and (max-width: 991px) {
+  .portfolio_col {
+      width: 425px;
+  }    
+}
+
+@media all and (min-width: 992px) {
+  .portfolio_col {
+      width: 800px;
+  }
 }

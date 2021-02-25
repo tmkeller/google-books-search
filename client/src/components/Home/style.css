@@ -1,0 +1,12 @@
+.home_p {
+    max-width: 500px;
+    margin: 20px auto 0px auto;
+    background-color: grey;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.home_welcome {
+    margin-top: 50px;
+    font-size: 50px;
+}

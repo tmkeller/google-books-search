@@ -1,0 +1,18 @@
+footer {
+    height: 50px;
+    background-color: #363c42;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    text-align: center;
+    display: block;
+    margin: 7px auto;
+    font-size: 10px;
+}
+
+footer p a {
+    text-decoration: underline;
+}

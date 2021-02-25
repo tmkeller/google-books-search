@@ -1,5 +1,5 @@
-// const router = require("express").Router();
-// const db = require("../models");
+const router = require("express").Router();
+const db = require("../models");
 
 // router.get("/recipes", (req, res) => {
 //   // Use a regular expression to search titles for req.query.q

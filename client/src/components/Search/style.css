@@ -1,0 +1,10 @@
+.searched_books {
+    font-size: 34px;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+.search_input {
+    max-width: 500px;
+    margin: 30px auto;
+}

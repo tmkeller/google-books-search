@@ -1,0 +1,21 @@
+.book_card {
+    padding: 10px;
+    margin-top:10px;
+    border: solid 2px darkgrey;
+    border-radius: 10px;
+    background-color: grey;
+}
+
+a.view_button {
+    color: black;
+    margin-right: 6px;
+}
+
+.view_button, .delete_button {
+    float: right;
+}
+
+.authors_list {
+    float: left;
+    clear: both;
+}

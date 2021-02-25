@@ -25,7 +25,7 @@ app.get( "/api/books", ( req, res ) => {
     .catch( err => { res.status( 500 ).send( err )});
 })
 
-app.post( '/api/book', ( req, res ) => {
+app.post( '/api/books', ( req, res ) => {
   db.Book.create( req.body )
   .then( data => { res.json( data )})
   .catch( err => { res.status( 500 ).send( err )})
