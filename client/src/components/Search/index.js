@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import "./style.css";
 import BookCard from "../BookCard";
 import API from '../../utils/API';
@@ -12,8 +12,12 @@ function Search() {
         console.log( "saveBook" );
         API.saveBook( data ).then( res => {
             console.log( res );
+            alert( "Book added!" );
         })
-        .catch( err => console.log( err ))
+        .catch( err => {
+            console.log( err );
+            alert( "Could not add book." );
+        })
     }
 
     const loadGoogleBooks = ( query ) => {
@@ -55,6 +59,7 @@ function Search() {
                         className="form-control" 
                         placeholder="Search Google Books" 
                         aria-label="Search"
+                        value={ search }
                     />
                 </div>
             </form>

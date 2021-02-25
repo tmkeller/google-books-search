@@ -26,7 +26,7 @@ function BookCard( props ) {
             </div>
             <div className="row">
                 <div className="col-sm-12 col-md-4 col-lg-3">
-                    <img className="book_image" src={ props.data.image || bookDefault } alt={ props.data.title } className="book_image" />
+                    <img className="book_image" src={ props.data.image || bookDefault } alt={ props.data.title + " cover image" } />
                 </div>
                 <div className="col-sm-12 col-md-8 col-lg-9">
                     <p>
