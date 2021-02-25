@@ -27,7 +27,6 @@ Type npm start in the root directory if you wish to initialize the app on your l
 
 ![Search page screenshot](./assets/search-screenshot.png)
 ![Saved page screenshot](./assets/saved-screenshot.png)
-![Demo video](./assets/demo.gif)
 
 ## Contributing
 Fork this repository at https://github.com/tmkeller/google-books-search, and email me at timothy.m.keller@gmail.com to discuss pull requests.
