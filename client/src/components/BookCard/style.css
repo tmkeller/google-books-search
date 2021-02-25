@@ -19,3 +19,7 @@ a.view_button {
     float: left;
     clear: both;
 }
+
+.book_image {
+    max-width: 150px;
+}

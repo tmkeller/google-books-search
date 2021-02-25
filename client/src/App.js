@@ -1,8 +1,6 @@
-import React, { useEffect } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import logo from "./logo.svg";
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
-import axios from 'axios';
 
 import Home from './components/Home';
 import Search from './components/Search';

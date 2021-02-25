@@ -1,5 +1,6 @@
 import React from 'react';
 import "./style.css";
+import bookDefault from "./assets/book.png";
 
 function BookCard( props ) {
 
@@ -9,11 +10,11 @@ function BookCard( props ) {
             <div className="row">
                 <div className="col-sm-12 col-md-9">
                     <h4 className="book_title">{ props.data.title }</h4><br/>
-                    <p className="authors_list">Written by: { props.data.authors.map( author => author + " " ) }</p>
+                    <p className="authors_list">Written by: { props.data.authors }</p>
                 </div>
                 <div className="col-sm-12 col-md-3">
                     <button 
-                        onClick={ () => { props.handleButtonClick( props.data._id )} } 
+                        onClick={ () => { props.handleButtonClick( props.data._id || props.data )} } 
                         className={ props.page ==="saved" ? "delete_button btn btn-danger" : "delete_button btn btn-primary" }
                     >
                         { props.page === "saved" ? "Delete" : "Save" }
@@ -25,7 +26,7 @@ function BookCard( props ) {
             </div>
             <div className="row">
                 <div className="col-sm-12 col-md-4 col-lg-3">
-                    <img src={ props.data.image } className="book_image" />
+                    <img className="book_image" src={ props.data.image || bookDefault } alt={ props.data.title } className="book_image" />
                 </div>
                 <div className="col-sm-12 col-md-8 col-lg-9">
                     <p>

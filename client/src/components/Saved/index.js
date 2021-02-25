@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "./style.css";
 import API from "../../utils/API";
-import mongoose from "mongoose";
 import BookCard from "../BookCard";
 
 function Saved() {
